@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link href="/styles/base.css" rel="stylesheet" />
+    <script src="js/navbar.js" defer></script>
+
+    <title>Frontend Mentor | Designo Agency Website Challenge</title>
+  </head>
+  <body>
+    <header class="primary-header">
+      <nav>
+        <a href="/">
+          <img
+            class="brand-logo"
+            src="assets/shared/desktop/logo-dark.png"
+            alt="business brand logo"
+          />
+        </a>
+        <a class="toggle-menu" href="#"></a>
+        <ul class="primary-navigation">
+          <li><a href="/about.html">OUR COMPANY</a></li>
+          <li><a href="/locations.html">LOCATIONS</a></li>
+          <li><a href="/contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="contact-form">
+        <div class="form-intro">
+          <h1>Contact Us</h1>
+          <p>
+            Ready to take it to the next level? Let’s talk about your project or
+            idea and find out how we can help your business grow. If you are
+            looking for unique digital experiences that’s relatable to your
+            users, drop us a line.
+          </p>
+        </div>
+        <div class="form-content">
+          <input
+            class="input-field"
+            type="text"
+            name="name"
+            placeholder="Name"
+          />
+          <input
+            class="input-field"
+            type="email"
+            name="email"
+            placeholder="Email Address"
+          />
+          <input
+            class="input-field"
+            type="tel"
+            name="phone"
+            placeholder="Phone"
+          />
+          <textarea
+            class="input-field"
+            name="message"
+            placeholder="Your Message"
+            cols="40"
+            rows="5"
+          ></textarea>
+          <input class="submit-button" type="submit" value="SUBMIT" />
+        </div>
+      </div>
+      <section class="locations-links">
+        <div class="location">
+          <img src="assets/shared/desktop/illustration-canada.svg" />
+          <h3>CANADA</h3>
+          <a class="see-location-button" href="/locations.html">SEE LOCATION</a>
+        </div>
+        <div class="location">
+          <img src="assets/shared/desktop/illustration-australia.svg" />
+          <h3>AUSTRAILIA</h3>
+          <a class="see-location-button" href="/locations.html">SEE LOCATION</a>
+        </div>
+        <div class="location">
+          <img src="assets/shared/desktop/illustration-united-kingdom.svg" />
+          <h3>UNITED KINGDOM</h3>
+          <a class="see-location-button" href="/locations.html">SEE LOCATION</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="primary-footer">
+      <div class="footer-details">
+        <div class="footer-navigation">
+          <a href="/">
+            <img
+              class="brand-logo"
+              src="assets/shared/desktop/logo-light.png"
+              alt="business brand logo"
+            />
+          </a>
+          <hr />
+          <div class="footer-links">
+            <a href="/about.html">OUR COMPANY</a>
+            <a href="/locations.html">LOCATIONS</a>
+            <a href="contact.html">CONTACT</a>
+          </div>
+        </div>
+        <div class="footer-business">
+          <div class="business-details">
+            <p>
+              <span class="details-header">Designo Central Office</span> <br />
+              3886 Wellington Street <br />
+              Toronto, Ontario M9C 3J5
+            </p>
+
+            <p>
+              <span class="details-header">Designo Central Office</span> <br />
+              3886 Wellington Street <br />
+              Toronto, Ontario M9C 3J5
+            </p>
+          </div>
+          <div class="business-socials">
+            <img src="assets/shared/desktop/icon-facebook.svg" />
+            <img src="assets/shared/desktop/icon-youtube.svg" />
+            <img src="assets/shared/desktop/icon-twitter.svg" />
+            <img src="assets/shared/desktop/icon-pinterest.svg" />
+            <img src="assets/shared/desktop/icon-instagram.svg" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

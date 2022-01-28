@@ -1,0 +1,424 @@
+@import "variables";
+@import "navigation";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+}
+
+/* Fonts for mobile view */
+h1 {
+  font-family: "Jost", sans-serif;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 500;
+}
+
+h2 {
+  font-family: "Jost", sans-serif;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 500;
+  letter-spacing: 1.4px;
+}
+
+h3 {
+  font-family: "Jost", sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 500;
+  letter-spacing: 5px;
+}
+
+p {
+  font-family: "Jost", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+}
+
+a {
+  font-family: "Jost", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.brand-logo {
+  max-width: 202px;
+  max-height: 27px;
+}
+
+/* Main content */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8em;
+  margin-bottom: 8em;
+
+  width: 100vw;
+}
+
+.intro {
+  min-width: 100%;
+  min-height: 843px;
+  background: $peach;
+}
+
+.project-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2em;
+}
+
+.project-links div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 250px;
+  width: 327px;
+
+  border-radius: 1em;
+  color: white;
+}
+
+.project-links div a {
+  color: white;
+}
+
+.project-web {
+  background: url("../assets/home/mobile/image-web-design.jpg") no-repeat;
+  background-size: cover;
+}
+
+.project-app {
+  background: url("../assets/home/mobile/image-app-design.jpg") no-repeat;
+  background-size: cover;
+}
+
+.project-graphic {
+  background: url("../assets/home/mobile/image-graphic-design.jpg") no-repeat;
+  background-size: cover;
+}
+
+.benefits,
+.benefits div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.benefits {
+  gap: 4em;
+}
+
+.benefits div {
+  padding: 0 24px;
+  gap: 2em;
+}
+
+/* Project examples styling */
+
+.design-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+
+  height: 320px;
+  padding: 0 24px;
+  background: $peach;
+  color: white;
+}
+
+.example {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  max-width: 327px;
+  max-height: 478px;
+}
+
+.project-examples {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
+}
+
+.example img {
+  width: 100%;
+  height: 100%;
+
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+
+.example-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  min-height: 158px;
+  padding: 0 30px;
+  background: $light-grey;
+
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+
+.example-text > h3 {
+  color: $peach;
+}
+
+/* About page styling */
+
+.about-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.about-intro-text {
+  padding: 64px 24px;
+  background: $peach;
+  color: white;
+}
+
+.about-intro-text h1 {
+  margin-bottom: 1em;
+}
+
+.about-page-images {
+  width: 375px;
+  height: 320px;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2em;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2em;
+
+  background: $light-grey;
+  padding: 48px 24px;
+}
+
+.see-location-button {
+  background: $peach;
+  padding: 1em;
+  border-radius: 0.5em;
+  color: white;
+}
+
+/* Locations page styles */
+
+.location-map-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2em;
+}
+
+.details-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 64px 24px;
+  gap: 2em;
+
+  background: $light-grey;
+}
+
+.details-text > h1 {
+  color: $peach;
+}
+
+/* contact page form styling */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3em;
+
+  height: 764px;
+  background: $peach;
+  padding: 64px 24px;
+
+  color: white;
+}
+
+.form-intro h1 {
+  margin-bottom: 1em;
+}
+
+.form-content {
+  width: 100%;
+}
+
+.form-content .input-field {
+  background-color: transparent;
+  border: none;
+  padding: 0 0 1em 1em;
+  margin-bottom: 2em;
+  border-bottom: 1px solid white;
+  width: 100%;
+}
+
+::placeholder {
+  color: white;
+}
+
+.submit-button {
+  width: 7.5em;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 0.5em;
+}
+
+/* Website Footer */
+
+.primary-footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20em;
+  background-color: $black;
+  color: white;
+}
+
+.primary-footer a {
+  color: white;
+}
+
+.footer-navigation,
+.footer-links,
+.footer-business,
+.footer-details,
+.business-details,
+.footer-cta-outer,
+.footer-cta-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-cta-outer {
+  position: absolute;
+  top: -12em;
+  right: 24px;
+  left: 24px;
+  background-color: $peach;
+  border-radius: 1em;
+}
+
+.footer-cta-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  padding: 48px 24px;
+}
+
+a.cta-button {
+  padding: 1em;
+  background-color: white;
+  border-radius: 0.5em;
+  color: $black;
+}
+
+.footer-details {
+  gap: 3em;
+}
+
+.footer-navigation {
+  gap: 2em;
+
+  width: 100vw;
+  padding-top: 15em;
+}
+
+.footer-navigation hr {
+  width: 90%;
+}
+
+.footer-links {
+  gap: 1.5em;
+}
+
+.business-details,
+.footer-business {
+  gap: 2em;
+}
+
+.business-socials {
+  display: flex;
+  gap: 1em;
+
+  padding-bottom: 2em;
+}
+
+.details-header {
+  font-weight: 500;
+}
+
+/* Fonts for tablet and desktop view */
+@media (min-width: 576px) {
+  h1 {
+    font-family: "Jost", sans-serif;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 500;
+  }
+
+  h2 {
+    font-family: "Jost", sans-serif;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 500;
+    letter-spacing: 1.4px;
+  }
+
+  .primary-header {
+    margin: 0 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .primary-header {
+    margin: 0 165px;
+  }
+}

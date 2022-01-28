@@ -1,0 +1,73 @@
+@import "variables";
+
+.primary-header {
+  height: 155px;
+}
+
+.primary-header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 100%;
+}
+
+.primary-navigation {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2em;
+
+  list-style: none;
+}
+
+@media (max-width: 576px) {
+  .primary-header {
+    height: 96px;
+  }
+
+  .primary-header nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2em 24px;
+  }
+
+  .primary-navigation {
+    position: absolute;
+    top: 96px;
+    right: 0;
+    left: 0;
+
+    display: none;
+    flex-direction: column;
+
+    padding: 4em 2em;
+    background-color: $black;
+  }
+
+  .primary-navigation li a {
+    color: white;
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: 2px;
+  }
+
+  .toggle-menu {
+    position: absolute;
+    top: 2em;
+    right: 24px;
+
+    width: 2em;
+    height: 1.75em;
+
+    background: url("../assets/shared/mobile/icon-hamburger.svg") no-repeat;
+    background-size: cover;
+  }
+
+  .toggle-menu.active {
+    background: url("../assets/shared/mobile/icon-close.svg") no-repeat;
+  }
+
+  .primary-navigation.active {
+    display: flex;
+  }
+}
