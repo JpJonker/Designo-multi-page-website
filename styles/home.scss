@@ -1,0 +1,43 @@
+.primary-navigation {
+  z-index: 1000;
+}
+
+.intro {
+  z-index: -1;
+}
+
+.project-web {
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .project-links {
+    position: relative;
+    width: 1111px;
+    height: 640px;
+  }
+
+  .project-web {
+    max-width: 541px;
+    max-height: 640px;
+    background: url("../assets/home/desktop/image-web-design-large.jpg")
+      no-repeat;
+  }
+
+  .project-app,
+  .project-graphic {
+    position: absolute;
+    max-width: 541px;
+    max-height: 308px;
+  }
+
+  .project-app {
+    top: 0;
+    right: 0;
+  }
+
+  .project-graphic {
+    bottom: 0;
+    right: 0;
+  }
+}

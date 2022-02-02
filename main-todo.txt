@@ -1,0 +1,3 @@
+Project links images needs background overlay
+Active states for pages
+Contact Form Validation and input styling

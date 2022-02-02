@@ -15,9 +15,14 @@
 .primary-navigation {
   display: flex;
   justify-content: space-evenly;
+  align-items: flex-start;
   gap: 2em;
 
   list-style: none;
+}
+
+.primary-navigation li a {
+  color: $black;
 }
 
 @media (max-width: 576px) {

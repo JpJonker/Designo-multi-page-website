@@ -17,6 +17,7 @@
     />
 
     <link href="/styles/base.css" rel="stylesheet" />
+    <link href="/styles/home.css" rel="stylesheet" />
     <script src="js/navbar.js" defer></script>
 
     <title>Frontend Mentor | Designo Agency Website Challenge</title>
@@ -41,50 +42,85 @@
     </header>
 
     <main>
-      <div class="intro"></div>
+      <div class="hero intro">
+        <div class="hero-text">
+          <h1>Award-winning custom designs and digital branding solutions</h1>
+          <p>
+            With over 10 years in the industry, we are experienced in creating
+            fully responsive websites, app design, and engaging brand
+            experiences. Find out more about our services.
+          </p>
+          <a class="cta-button" href="#">LEARN MORE</a>
+        </div>
+        <div class="hero-image"></div>
+      </div>
       <div class="project-links">
         <div class="project-web">
-          <h2>WEB DESIGN</h2>
-          <a href="/web-design.html">VIEW PROJECTS</a>
+          <div class="project-overlay">
+            <h2>WEB DESIGN</h2>
+            <a href="/web-design.html"
+              >VIEW PROJECTS
+              <img src="assets/shared/desktop/icon-right-arrow.svg" />
+            </a>
+          </div>
         </div>
         <div class="project-app">
-          <h2>APP DESIGN</h2>
-          <a href="/app-design.html">VIEW PROJECTS</a>
+          <div class="project-overlay">
+            <h2>APP DESIGN</h2>
+            <a href="/app-design.html"
+              >VIEW PROJECTS
+              <img src="assets/shared/desktop/icon-right-arrow.svg"
+            /></a>
+          </div>
         </div>
         <div class="project-graphic">
-          <h2>GRAPHIC DESIGN</h2>
-          <a href="/graphic-design.html">VIEW PROJECTS</a>
+          <div class="project-overlay">
+            <h2>GRAPHIC DESIGN</h2>
+            <a href="/graphic-design.html"
+              >VIEW PROJECTS
+              <img src="assets/shared/desktop/icon-right-arrow.svg"
+            /></a>
+          </div>
         </div>
       </div>
       <section class="benefits">
         <div class="passionate">
+          <div class="image"></div>
           <img src="assets/home/desktop/illustration-passionate.svg" />
-          <h3>PASSIONATE</h3>
-          <p>
-            Each project starts with an in-depth brand research to ensure we
-            only create products that serve a purpose. We merge art, design, and
-            technology into exciting new solutions.
-          </p>
+          <div class="benefit-text">
+            <h3>PASSIONATE</h3>
+            <p>
+              Each project starts with an in-depth brand research to ensure we
+              only create products that serve a purpose. We merge art, design,
+              and technology into exciting new solutions.
+            </p>
+          </div>
         </div>
 
         <div class="resourceful">
+          <div class="image"></div>
           <img src="assets/home/desktop/illustration-resourceful.svg" />
-          <h3>RESOURCEFUL</h3>
-          <p>
-            Everything that we do has a strategic purpose. We use an agile
-            approach in all of our projects and value customer collaboration. It
-            guarantees superior results that fulfill our clients’ needs.
-          </p>
+          <div class="benefit-text">
+            <h3>RESOURCEFUL</h3>
+            <p>
+              Everything that we do has a strategic purpose. We use an agile
+              approach in all of our projects and value customer collaboration.
+              It guarantees superior results that fulfill our clients’ needs.
+            </p>
+          </div>
         </div>
 
         <div class="friendly">
+          <div class="image"></div>
           <img src="assets/home/desktop/illustration-friendly.svg" />
-          <h3>FRIENDLY</h3>
-          <p>
-            We are a group of enthusiastic folks who know how to put people
-            first. Our success depends on our customers, and we strive to give
-            them the best experience a company can provide.
-          </p>
+          <div class="benefit-text">
+            <h3>FRIENDLY</h3>
+            <p>
+              We are a group of enthusiastic folks who know how to put people
+              first. Our success depends on our customers, and we strive to give
+              them the best experience a company can provide.
+            </p>
+          </div>
         </div>
       </section>
     </main>
@@ -92,12 +128,12 @@
     <footer class="primary-footer">
       <div class="footer-cta-outer">
         <div class="footer-cta-inner">
-          <h1>Let's talk about your project</h1>
+          <h2>Let's talk about your project</h2>
           <p>
             Ready to take it to the next level? Contact us today and find out
             how our expertise can help your business grow
           </p>
-          <a class="cta-button" href="#">GET IN TOUCH</a>
+          <a class="cta-button" href="/contact.html">GET IN TOUCH</a>
         </div>
       </div>
 
@@ -126,9 +162,10 @@
             </p>
 
             <p>
-              <span class="details-header">Designo Central Office</span> <br />
-              3886 Wellington Street <br />
-              Toronto, Ontario M9C 3J5
+              <span class="details-header">Contact Us (Central Office)</span>
+              <br />
+              <a href="tel:+1 253-863-8967">P: +1 253-863-8967</a> <br />
+              <a href="mailto:contact@designo.co">M: contact@designo.co</a>
             </p>
           </div>
           <div class="business-socials">
